@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD USING LOCAL STORAGE</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">JS-CRUD-LocalStorage</a>
+      <div class="menu-right">
+        <a href="index.html">Home</a>
+        <a href="create.html">Create</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <h3 class="text-center">Create a New User</h3>
+      </div>
+      <div class="row">
+        <div class="card">
+          <div class="card-body">
+            <form method="post" autocomplete="off" id="userForm">
+              <div class="form-input">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="form-input">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="form-input">
+                <label for="mobile">Mobile</label>
+                <input
+                  type="number"
+                  name="mobile"
+                  id="mobile"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-input">
+                <button type="submit" class="btn btn-success">
+                  Create a New User
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/create.js"></script>
+  </body>
+</html>
